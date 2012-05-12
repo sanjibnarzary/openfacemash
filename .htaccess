@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^index$ index.php
+RewriteRule ^about$ about.html
+RewriteRule ^rate$ rate.php
+RewriteRule ^([A-Za-z0-9-]+)$ pageView.php?id=$1 [NC,L] 
+
+ErrorDocument 404 /fancykart.com/notfound.html
