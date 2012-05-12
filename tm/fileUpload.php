@@ -1,4 +1,14 @@
 <?php
+/*
+<!--
+        @author: Sanjib Narzary
+        @email: o-._.-o@live.com or alayaran@gmail.com
+        @profession: M. Tech Student
+        @colleges: NIT Silchar, B.Tech and NIT Calicut, M.Tech 2012
+        @experienced: None
+        @license: GNU/GPL
+//-->
+*/
   header('location: editPage.php?id=' . $_POST['id'] . '');
 include('mysql.php');
 if($_POST['id']){
