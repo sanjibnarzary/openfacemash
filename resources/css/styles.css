@@ -1,0 +1,48 @@
+body{
+	background-color: #FFF;
+}
+#header h1,#header p{
+	text-align:center;
+}
+#container{
+	width: 920px;
+	margin: 0 100px 40px 200px;
+	position: relative;
+	z-index: 1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: left;
+	display: block;
+	overflow: visible;
+	cursor: default;
+	
+}
+
+#upper-half, #lower-half{
+	display: block;
+}
+
+
+#loginform{
+	width: 390px;
+	float: right;
+	position: relative;
+}
+#log-desc
+#registerform {
+	width: 410px;
+	position: relative;
+}
+ #reg-desc{
+	width: 510px;
+	float: right;
+	position: relative;
+	padding-top: 30px;
+}
+
+#footer{
+	text-align:center;
+	padding-bottom:10px;
+}

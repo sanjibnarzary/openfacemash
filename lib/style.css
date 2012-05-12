@@ -1,0 +1,111 @@
+			body {
+				margin: 0;
+				background-image: url(../lib/bg.png);
+				background-repeat: repeat-x;
+				background-color: #006666;
+				font-family: 'Verdana', 'Helvetica', 'Bitstream Vera', 'Dejavu Sans', 'Tahoma', 'Arial';
+				font-size: 13px;
+				color: white;
+			}
+			
+			a {
+				color: white;
+				border-bottom: 1px dotted white;
+				text-decoration: none;
+			}
+			.imga{
+				text-decoration: none;
+			}
+			
+			div#container {
+				width: 760px;
+				margin: 0 auto;
+			}
+			
+			div#header a#logo {
+				display: block;
+				color:#000000;
+				font-size: 48px;
+				width: auto;/*400*/
+				height: 120px;
+				/*background-image: url(../lib/logo.png);*/
+				margin: 0 auto;
+				border: none;
+			}
+			
+			div#navigation {
+				margin: 10px auto;
+				width: 420px;			
+			}
+			
+			div#navigation a {
+				background-image: url(../lib/nav_bg.png);
+				background-repeat: repeat-x;
+				float: left;
+				display: block;
+				height: 29px;
+				width: 130px;
+				border: none;
+				padding-top: 11px;
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-o-border-radius: 5px;
+				margin: 0 5px;
+				text-align: center;
+			}
+			
+			div#content {
+				margin-top: 60px;
+			}
+			
+			div.half {
+				width: 50%;
+				float: left;
+			}
+			
+			div.holder {
+				padding: 10px;
+				height: 420px;
+				overflow: hidden;
+			}
+			
+			div.holder img {
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				-o-border-radius: 5px;
+			}
+			
+			div.holder input[type="submit"] {
+				position: relative;
+				top: -403px;
+				border: none;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-o-border-radius: 5px;
+				border-radius: 5px;
+				height: 224px;
+				width: 100%;
+				background-color: #333;
+				border: none;
+				font-size: 48px;
+				text-align: center;
+				padding-top: 176px;
+				padding-bottom: 224px;
+				cursor: pointer;
+				opacity: 0.5;
+				display: none;
+				color: white;
+			}
+			
+			div.clear {
+				clear: both;
+			}
+			img.top {
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-o-border-radius: 5px;
+				border-radius: 5px;
+				margin: 5px;
+			}

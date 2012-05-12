@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+@import "resources/css/styles.css";
+@import "resources/css/stylesreg.css";
+</style>
+  
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+
+
+<div id="container">
+<div id="header">
+	<h1>Facemash</h1>
+	<p><i>Create your own facemash pages with fancykart.com</i></p>
+</div>
+<div id="upper-half">
+<div id="loginform">
+	<div id="login-success"></div>
+
+	<div id="login-error"></div>
+
+</div>
+
+</div>
+<div id="log-desc"><img src="resources/images/log-desc.png"></div>
+<div id="reg-desc">
+	<img src="resources/images/reg-desc.png">
+</div>
+<div id="lower-half">
+<div id="registerform">
+	<div id="register-success"></div>
+
+	<div id="register-error"></div>
+
+</div>
+
+</div> <!-- End Div Lower Half //-->
+
+</div>
+<!-- End Div container //-->
+
+<script type="text/javascript">
+function goRegister(){
+	window.location.href="./reg-new.html";
+}
+
+function goLogin(){
+	window.location.href="./login.html";
+}
+</script>
+
+<script>
+$("#register-success").load("./reg-new.html", function(response, status, xhr) {
+  if (status == "error") {
+    var msg = '<form><input type="button" id="formsubmit" value="Register" onClick="goRegister() "/></form>';
+    $("#register-error").html(msg);
+  }
+});
+  </script>
+
+<script>
+$("#login-success").load("./login.html", function(response, status, xhr) {
+  if (status == "error") {
+    var msg = '<form><input type="button" id="formsubmit" value="Login" onClick="goLogin() "/></form>';
+    $("#login-error").html(msg);
+  }
+});
+  </script>
+
+<div id="footer">
+	<p><i>Copyright &copy FancyKart. Site Created by Sanjib Narzary</i></p>
+</div>
+</body>
+</html>

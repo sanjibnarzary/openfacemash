@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration</title>
+<style type="text/css">
+@import "stylesreg.css";
+</style>
+<script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("form.register").change(function() {
+		$.post("check.php", $("form.register").serialize(), function( data ) {
+			if( data.name == "blankname")
+				$("p#name_error").slideDown();
+			else
+				$("p#name_error").hide();
+			if( data.password == "missmatch" )
+				$("p#password_error").slideDown();
+			else
+				$("p#password_error").hide();
+			if( data.password == "shortpass" )
+				$("p#shortpass_error").slideDown();
+			else
+				$("p#shortpass_error").hide();
+			if( data.email == "notvalid" )
+				$("p#email_error").slideDown();
+			else
+				$("p#email_error").hide();
+			
+		}, "json");
+	});
+});
+</script>
+</head>
+<body>
+<form action="register.php" method="post" class="register">
+    <fieldset>
+        <legend>Registration</legend>
+	<input type="text" name="name" value="" />
+	<label>Full Name:</label>
+		<p id="name_error" class="error">Name Can not be Blank</p>
+	<input type="text" name="email" value="" />
+	<label>Email:</label>
+	<p id="email_error" class="error">Email is not valid</p>
+
+	
+        
+	<input type="password" name="password" value="" />
+	<label>Password:</label>
+        <p id="shortpass_error" class="error">Password too Short.</p>
+        <input type="password" name="password_again" value="" />
+        <label>Retype Password:</label>
+		<p id="password_error" class="error">Passwords do not match</p>
+        
+	
+	<label style="font-size:10px;">Registering you Agreed that you Accept TOS.<a href="tos.html" style="text-decoration:none;font-size:11px;"> Read here our TOS.</a></label>
+	<p />	
+        <br />
+        <button type="submit" id="formsubmit" name="submit">Register</button>
+    </fieldset>
+	
+</form>
+</body>
+</html>
