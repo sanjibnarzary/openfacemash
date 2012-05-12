@@ -3,6 +3,14 @@
 /*
  *
  * 
+ <!--
+        @author: Sanjib Narzary
+        @email: o-._.-o@live.com or alayaran@gmail.com
+        @profession: M. Tech Student
+        @colleges: NIT Silchar, B.Tech and NIT Calicut, M.Tech 2012
+        @experienced: None
+        @license: GNU/GPL
+//-->
  * Author: Sanjib Narzary
  * Version 1.1
  * Great resources:
